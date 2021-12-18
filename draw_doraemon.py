@@ -4,6 +4,7 @@ wn = turtle.Screen()
 wn.setup(width=1000, height=800)
 
 def my_goto(x, y):
+    
     penup()
     goto(x, y)
     pendown()
@@ -297,8 +298,9 @@ def Doraemon():
 
 
 if __name__ == '__main__':
+    hideturtle()
     pensize(3)
-    speed(9)
+    speed(10)
     Doraemon()
     my_goto(100, -300)
     write('Bmt-t', font=("Bradley Hand ITC", 30, "bold"))
